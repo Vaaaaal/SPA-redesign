@@ -10,7 +10,7 @@ const Title = props => {
     <h2
       css={css`
         font-size: 2.75rem;
-        width: 50%;
+        width: 70%;
         font-family: "Poppins";
         line-height: 1.2;
         color: ${colors.darkgrey};

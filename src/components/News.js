@@ -3,7 +3,6 @@
 import React from "react";
 import { css, jsx } from "@emotion/core";
 
-import { colors } from "../utils/colors";
 import { articles } from "../utils/article";
 import dot2 from "../utils/dot2.png";
 import Title from "./Title";
@@ -16,7 +15,7 @@ const News = () => {
     autoplaySpeed: 2500,
     slidesToShow: 3,
     swipeToSlide: true
-  }
+  };
 
   return (
     <div
@@ -37,8 +36,9 @@ const News = () => {
           left: 23%;
         `}
       />
-      <Slider {...settings} css={
-        css`
+      <Slider
+        {...settings}
+        css={css`
           margin-top: 50px;
           margin-left: -5%;
           margin-right: -5%;
