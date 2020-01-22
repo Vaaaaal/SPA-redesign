@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:800|Rubik:300,700&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: 0 10%;
+}
