@@ -20,3 +20,18 @@ ul {
 .list {
   margin-bottom: 10px;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+  display: none; /* A faire diparaitre pour afficher la scrollbar custom */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 50vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ac9880;
+  border-radius: 50vw;
+}

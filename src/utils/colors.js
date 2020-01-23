@@ -1,3 +1,5 @@
+// "Stock" de couleurs que j'importe et utilise dans le projet (${colors.exemple})
+
 export const colors = {
   darkgrey: "#707070",
   grey: "#CFCFCF",
