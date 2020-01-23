@@ -5,9 +5,21 @@ import { css, jsx } from "@emotion/core";
 
 import { colors } from "../utils/colors";
 
+let prevScrollPos = window.pageXOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    this.document.getElementById("navbar").style.top = "0";
+  } else {
+    this.document.getElementById("navbar").style.top = "-70px";
+  }
+  prevScrollPos = currentScrollPos;
+};
+
 const Navbar = () => {
   return (
     <div
+      id="navbar"
       css={css`
         height: 70px;
         width: 100vw;
@@ -19,6 +31,7 @@ const Navbar = () => {
         grid-template: 1fr / 15% repeat(2, 1fr);
         z-index: 10;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        transition: top 0.4s ease-out;
       `}
     >
       <div
